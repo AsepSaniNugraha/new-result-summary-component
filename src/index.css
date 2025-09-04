@@ -24,7 +24,7 @@
 }
 @layer components{
     .reaction{
-        background-color: var(--color-red-50);
+        background-color: var(--color-red-500);
         color: var(--color-light-red);
     }
     .memory{
