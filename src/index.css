@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@layer base{
+    body{
+        font-family: 'Hanken Grotesk', Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        background-color: var(--color-pale-blue);
+        @apply h-[100vh] w-[100vw];
+    }
+    :root{
+        --color-light-red: hsl(0, 100%, 67%);
+        --color-orange-yellow: hsl(39, 100%, 56%);
+        --color-green-teal: hsl(166, 100%, 37%);
+        --color-cobalt-blue: hsl(234, 85%, 45%);
+        --color-light-slate-blue: hsl(252, 100%, 67%);
+        --color-light-royal-blue: hsl(241, 81%, 54%);
+        --color-violet-blue: hsla(256, 72%, 46%, 1);
+        --color-persian-blue: hsla(241, 72%, 46%, 0);
+        --color-white: hsl(0, 0%, 100%);
+        --color-pale-blue: hsl(221, 100%, 96%);
+        --color-light-lavender: hsl(241, 100%, 89%);
+        --color-dark-gray-blue: hsl(224, 30%, 27%);
+    }
+}
+@layer components{
+    .reaction{
+        background-color: var(--color-red-50);
+        color: var(--color-light-red);
+    }
+    .memory{
+        background-color: var(--color-yellow-100);
+        color: var(--color-orange-yellow);
+    }
+    .verbal{
+        background-color: var(--color-green-100);
+        color: var(--color-green-teal);
+    }
+    .visual{
+        background-color: var(--color-blue-100);
+        color: var(--color-cobalt-blue);
+    }
+    .btn-continue{
+        background-color: var(--color-persian-blue);
+    }
+}
